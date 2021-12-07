@@ -14,19 +14,19 @@ This prevents dubeity while decoding the coded data.
 
 <br>
 
-### Explanation (along with examples)
-#### TYPES
+### Explanation 
+#### TYPES -
 There are mainly two major parts in Huffman Coding
 Build a Huffman Tree from input characters.
 Traverse the Huffman Tree and assign codes to characters.
 
 <br>
 
-### Application-
+### Application -
 They are used for transmitting fax and text.
 They are used by conventional compression formats like PKZIP, GZIP, etc.
  It is useful in cases where there is a series of frequently occurring characters.
-#### Steps to build Huffman Tree
+#### Steps to build Huffman Tree -
 Input is an array of unique characters along with their frequency of occurrences and output is Huffman Tree. 
 Create a leaf node for each unique character and build a min heap of all leaf nodes (Min Heap is used as a priority queue. The value of frequency field is used to compare two nodes in min heap. Initially, the least frequent character is at root)
 Extract two nodes with the minimum frequency from the min heap.
@@ -91,7 +91,7 @@ Traverse the tree formed starting from the root. Maintain an auxiliary array. Wh
 The codes are as follows:
 
 character   code-word
-    f          0
+    f          0<br>
     c          100
     d          101
     a          1100
